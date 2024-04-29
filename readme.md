@@ -98,6 +98,13 @@ update_user           PUT      /user/<int:uid>
 
     --4.7： 报错情形： 1 数据库中数据不存在；2 数据格式错误有的时候返回是页面； 3 找不到数据库位置
 
+---
+
+三、vscode 插件 
+
+预览sql:
+
+> SQLite Viewer v0.3.13
 
 # If you find me
 

@@ -62,7 +62,7 @@ def get_user_by_id(uid):
             return jsonify({'id': user.id, 'username': user.username, 'email': user.email})  
     except:
         # 如果没有找到用户，返回一个错误消息  
-        return jsonify(msg = '用户已经存在！！！')
+        return jsonify(msg = '数据库中用户不存在！！！')
     
 # 分页获取数据
 # get /user?page=1&per_page=10 

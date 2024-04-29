@@ -1,4 +1,3 @@
-from app import User, db
 from faker import Faker
 import json
 import requests

@@ -1,4 +1,3 @@
-from app import User, db
 from faker import Faker
 import json
 import requests
@@ -15,7 +14,7 @@ def generation():
 
 headers = {'Content-Type': 'application/json'}  
 
-for i in range(10):
+for i in range(1):
     for i in range(100):
         data = {
 
@@ -38,10 +37,12 @@ for i in range(10):
 
 '''
 存在问题：
-    当发送请求时，没有办法确保每一个请求都可以发送成功。待改进  √
+1    当发送请求时，没有办法确保每一个请求都可以发送成功。待改进  √
     
     wo 当状态码不为200时，我就一直发送请求，
     设置程序退出条件，
     状态码为400，是服务器那边设置的用户已存在的状态码
     200是又一次发送请求后成功状态码
+
+2 发送请求时，一次性发送多个请求(1000) 等待时间过长，可考虑用多线程去实现  ×
 '''

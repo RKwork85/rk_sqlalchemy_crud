@@ -1,6 +1,6 @@
 import requests 
 
-with requests.get('http://127.0.0.1:5000//user?page=2&per_page=100') as res:
+with requests.get('http://127.0.0.1:5000//user?page=2&per_page=10') as res:
     print(res.json())
 
 
